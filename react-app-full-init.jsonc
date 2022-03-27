@@ -1,0 +1,28 @@
+// notes (add tailwind),
+{
+  "starting-react-app": {
+    "typescript-template": "npx create-react-app my-app --template typescript",
+    "linting": "yarn add eslint --dev",
+    "lint-config": "yarn create @eslint/config",
+    "ui-component": "yarn add bootstrap",
+    "icons": "yarn add react-icons",
+    "styling": "yarn add styled-components",
+    "optional-style": {
+      "tailwind-install": "yarn add tailwindcss --dev",
+      "tailwind-config": "npx tailwindcss init",
+      //// to tailwind.config.js add
+      // module.exports = {
+      // content: ["./src/**/*.{js, jsx, ts, tsx}"],
+      // theme: {
+      //  extend: {},
+      //   },
+      //  plugins: [],
+      //    }
+      //// to src/index.css file add
+      //   @tailwind base;
+      //    @tailwind components;
+      //   @tailwind utilities;
+      "scan-template-files": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
+    }
+  }
+}
