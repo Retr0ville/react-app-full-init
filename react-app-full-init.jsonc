@@ -20,7 +20,7 @@
       //    }
       //// to src/index.css file add
       //   @tailwind base;
-      //    @tailwind components;
+      //   @tailwind components;
       //   @tailwind utilities;
       "scan-template-files": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
     }
